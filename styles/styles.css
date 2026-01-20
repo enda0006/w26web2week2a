@@ -1,0 +1,39 @@
+body{
+    background-color: bisque;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color:pink;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navigation */
+ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0; /* this removes the indent on the list */
+    justify-content: space-evenly; /* to distribute links horizontally */
+}
+
+h1{
+    font-family:"Rubik Storm", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    /* this list will tell your browser to fall back on fonts if it cant sind the first */
+}
+
+@media screen and (min-width:700px) {
+    main{
+        /* make the elements inside of main sit nect to eachother */
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    ul{
+        display: block;
+        padding-left: 2em;
+    }
+}
+
